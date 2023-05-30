@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title>Automated Decision Making | Impact of Technology</title>
+    <link rel="stylesheet" href="w3styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="index.js">
+</head>
+
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-teal w3-collapse w3-top w3-large w3-padding"
+     style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+    <br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+       style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container">
+        <h3 class="w3-padding-64"><b>Company<br>Name</b></h3>
+    </div>
+    <div class="w3-bar-block">
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a>
+        <a href="CITW.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+            Computers in the workforce
+        </a>
+        <a href="ADM.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+            Automated decision making
+        </a>
+        <a href="AI.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+            Artificial Intelligence
+        </a>
+        <a href="EE.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+            Environmental effects
+        </a>
+        <button id="EI" onclick="open_close()" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-caret-right"></i> Ethical issues</button>
+        <div id="ethicalIssues" class="w3-bar-block w3-container w3-hide">
+            <a href="#CATI" class="w3-button w3-block w3-left-align w3-bar-item">Censorship & The Internet</a>
+            <a href="#MB" class="w3-button w3-block w3-left-align w3-bar-item">Monitoring Behaviour</a>
+            <a href="#API" class="w3-button w3-block w3-left-align w3-bar-item">Analysis of Personal Information</a>
+            <a href="#PAOC" class="w3-button w3-block w3-left-align w3-bar-item">Piracy & Offensive Communications</a>
+            <a href="#UIDC" class="w3-button w3-block w3-left-align w3-bar-item">User Interface Design Considerations</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-teal w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-teal w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+     id="myOverlay"></div>
+
+<!-- Page -->
+
+<div id="page" class="w3-main w3-container">
+    <p class="w3-hide-large"><br> <br></p>
+    <img src="images/[05 EI] Ethical vs Unethical.png" alt="Woman holding arms out confused with question marks above her head. Signs pointing opposite ways show 'Ethical' and 'Unethical'">
+    <div id="information" class="w3-container">
+        <h1 class="w3-jumbo w3-center"><b>Ethical Issues</b></h1>
+        <h4>In the  computerised age of today, a lot of what we do could step out of our moral compass. Right now, we need to figure out what the morel, ethical, environmental, social and cultural implications of our actions are, as finding what those are is the first step to solving them.</h4>
+    </div>
+    <div id="CATI" class="w3-container">
+        <h1 class="w3-xxxlarge w3-text-teal"><b>Censorship and The Internet</b></h1>
+        <hr class="w3-round">
+        <h4>Censorship is the act of stopping people from accessing, viewing and publishing certain content. Some countries use it to block out political opinions that aren't favourable. The amount of censorship that the government should have is well debated, as they have the power to influence the decisions of the public. However, censorship on smaller levels, such as in schools or at a workplace for blocking inappropriate content while maintaining high levels of productivity.</h4>
+        <h4>Internet Service Providers tend to block content associated to extreme political beliefs and terrorism, however the big fear right now is that it will block out alternative political beliefs. If that were to happen, then the withholding of information would be pushing a certain agenda, which is very unethical.</h4>
+        <h4>On the flip side, many believe in the idea of a 'Free Internet', free of censorship at all, however, most people think that some sort of censorship is necessary for national security and the filtering of extremist propaganda.</h4>
+    </div>
+    <div id="MB" class="w3-container">
+        <h1 class="w3-xxxlarge w3-text-teal"><b>Monitor Behaviour</b></h1>
+        <hr class="w3-round">
+        <h4>Being monitored has become a big part of our lives. CCTV are used worldwide for security and detecting crime. They are also useful evidence for tracking criminal activity. Ankle monitors are also used to track where someone goes if they are under house arrest. Some say this is unethical, while others say this is necessary for putting people off of crime.</h4>
+    </div>
+    <div id="API" class="w3-container">
+        <h1 class="w3-xxxlarge w3-text-teal"><b>Analyse Personal Information</b></h1>
+        <hr class="w3-round">
+        <h4>Companies have recently found out that data on the population is one of the most valuable things we can get in this age, and so have used a process called data mining to collect it. With this data, they can do many practices including targeted advertising and identifying connections between two variables that was previously unknown. There have been times in which companies have used data like this to use this to their advantage, for instance if an insurance company finds out someone asking for their service is at high risk for developing disease, then they might charge a higher premium or even deny them service.</h4>
+        <h4>Companies legally have to state what they are taking from you, and give you the choice to give them or not. To maximise the data they get, they try to make these things as subtle as possible, so you just press accept. There's some pressure on large firms to make these pop-ups more transparent about what they get, and what they will be used for. This is why things like the Data Protection Act (1998) and the General Data Protection Regulation (2018) exist: to get companies to be more transparent about these things.</h4>
+    </div>
+    <div id="PAOC" class="w3-container">
+        <h1 class="w3-xxxlarge w3-text-teal"><b>Piracy and Offensive Communications</b></h1>
+        <hr class="w3-round">
+        <h4>Piracy is the act of copying content without permission, such as music or films. This is illegal, a form of theft, however the internet makes it so much easier to pirate content. With this in mind, it is still up to the individual whether it is within their moral compass to pirate content.</h4>
+        <h4>The internet has its perks, however one of the bad parts about it is that anyone can have an anonymous persona and say indecent things to anyone they want. This leads the way to cyber-bullying and online harassment, which both are a criminal offence under the Malicious Communications Act (1998). If suspected, law enforcement may track you down and the action may be put on your criminal record.</h4>
+    </div>
+    <div id="UIDC" class="w3-container">
+        <h1 class="w3-xxxlarge w3-text-teal"><b>User Interface Design Considerations</b></h1>
+        <hr class="w3-round">
+        <h4>When creating websites, web developers have to be mindful of the people that can visit their website. The developer has to put certain things in their website to make it more friendly for people who may not be able to use the website in the same way as us. There are 3 main categories that solutions can be put into, and they will be addressed one-by-one.</h4>
+        <ol class="list">
+            <li>
+                <h3><u><b>Layout</b></u></h3>
+                <div class="w3-container">
+                    The Equality Act (2010) makes discriminating against providing a service to a certain group of people illegal, meaning that you have to make sure that everyone who visits your website can use it. Something  as simple as where the menu button is placed is key to attracting a certain demographic of people. English-speaking countries like the UK write from left to right, meaning that the menu button would be on the left hand side of the page instead of the right, however that flips in places like the UAE, where they speak Arabic, a language written right to left.<br><br>Another way to stop this is by making these pages more accessible to people with disabilities, such as visual or audible impairments. This could be by enlarging texts, altering contrasts, providing alternative text for images, providing screen magnifier options or providing transcripts for people to use.
+                </div>
+            </li>
+            <li>
+                <h3><u><b>Colour Paradigms</b></u></h3>
+                <div class="w3-container">
+                    Some colours are great in one place, but bring bad luck in another. Web developers need to consider these things when creating a website. For example, in the Middle East the colour white is associated with mourning. However, in western cultures like the UK's or the US', this is more grouped in with purity. Normally, a colour scheme with positive connotations would be chosen such as green which is associated with luck or nature.
+                </div>
+            </li>
+            <li>
+                <h3><u><b>Character Sets</b></u></h3>
+                <div class="w3-container">
+                    The best practice for a company making a website wanting to reach a wider audience would be to translate their language into many different languages, so that more people can have access to it. Character sets like standard ASCII only have room for the standard 26 letters of the alphabet (capitalised and not), the numbers and some other symbols. This might be enough for some languages, like English, but not for others like Spanish and French which have more. Extended ASCII gives an extra bit to use for 128 more characters if you only need to add a few more. For language with different scripts like Japanese or Chinese, it's better to use Unicode, which can represent over one million characters.
+                </div>
+            </li>
+        </ol>
+    </div>
+</div>
+<p><br> <br></p>
+<script src="index.js"></script>
+</body>

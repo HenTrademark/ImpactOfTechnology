@@ -1,4 +1,23 @@
+hr {
+    width:50px;
+    border:5px solid #009688
+}
+
+img {
+    width:100%;
+    max-width: 1300px;
+    height:auto;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #page {
     margin-left:340px;
     margin-right:40px
+}
+
+.list {
+    font-size: medium;
 }
