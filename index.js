@@ -21,5 +21,17 @@ function open_close() {
     }
 }
 function validate() {
-
+    let forename = document.getElementById("InputForename");
+    let surname = document.getElementById("InputSurname");
+    let email = document.getElementById("InputEmail");
+    let message = document.getElementById("InputMessage");
+    if (/[A-Za-z0-9]+@[A-Za-z].(co|com|net)/.test(email)) {
+        console.log(forename);
+        console.log(surname);
+        console.log(email);
+        console.log(message);
+        alert("Submitted!");
+    } else {
+        alert("Email needs to be in the form email.example.com");
+    }
 }
